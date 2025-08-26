@@ -58,12 +58,6 @@ a {
     color:#666666;
 }
 
-.hobby{
-    width:fit-content;
-    text-align:left;
-    margin:auto;
-}
-
 .main_wrapper{
     text-align:center;
     background-color:#f7f7f7;
@@ -73,6 +67,69 @@ a {
 .main_wrapper h1{
     color:black;
 }
+
+/**** hobby ****/
+
+.hobby{
+    /*width:fit-content;*//*これは子要素のサイズに合わせる指示*/
+    width:100%;
+    text-align:left;
+    margin:auto;
+    display:flex;
+
+    justify-content: center; /* 横方向：中央寄せ */
+    align-items: center; /* 縦方向：中央寄せ */
+    gap: 20px;
+}
+
+.hobby_child{
+    width:25%;
+    flex:auto;
+    margin:0 auto;
+    text-align: center;
+    padding:50px 0;
+    border:1px #888888 solid;
+    font-weight:bold;
+    color:#292624;
+}
+
+.hobby_child_dog{
+    background-color:rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-image:url(image/hobby_bg/dog.jpg);
+    background-size:280px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hobby_child_wine{
+    background-color:rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-image:url(image/hobby_bg/wine.jpg);
+    background-size:280px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hobby_child_cooking{
+    background-color:rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-image:url(image/hobby_bg/cooking.jpg);
+    background-size:280px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hobby_child_game{
+    background-color:rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-image:url(image/hobby_bg/game.jpg);
+    background-size:200px;
+    background-repeat: no-repeat;
+    background-position: left 10%;
+}
+
+
 
 /************************
 *footer
